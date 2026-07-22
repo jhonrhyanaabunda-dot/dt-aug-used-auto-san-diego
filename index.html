@@ -1312,6 +1312,13 @@
 .hero-cta a.secondary:hover{background:var(--ink);color:#fff}
 .hero-cta .arrow{transition:transform .2s ease}
 .hero-cta a:hover .arrow{transform:translateX(3px)}
+
+/* Dealer clip (July .dealer-clip pattern: vertical 9:16 phone video) */
+.dealer-clip{margin:8px auto 28px;max-width:260px}
+.dealer-clip .frame{overflow:hidden;border-radius:14px;border:1px solid var(--rule);background:#0e1216;aspect-ratio:9/16;box-shadow:0 2px 4px rgba(20,18,16,.06),0 14px 30px rgba(20,18,16,.10)}
+.dealer-clip video{display:block;width:100%;height:100%;object-fit:cover}
+.dealer-clip figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center}
+@media (max-width:640px){.dealer-clip{max-width:100%}}
 </style>
 </head>
 <body>
@@ -1340,16 +1347,13 @@
   </div>
 
   <figure class="hero-photo full-bleed" role="img" aria-label="Used and Certified Pre-Owned Toyotas at Dalton Toyota National City">
-    <video class="scene" width="3276" height="950" autoplay muted loop playsinline preload="auto" poster="98.webp" aria-label="Used and Toyota Certified Pre-Owned vehicles for sale at Dalton Toyota National City on the Mile of Cars in San Diego County" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-        <source src="hero.mp4" type="video/mp4">
-        <img class="scene"
+    <img class="scene"
          src="98.webp"
          alt="Used and Toyota Certified Pre-Owned vehicles for sale at Dalton Toyota National City on the Mile of Cars in San Diego County"
          loading="eager"
          fetchpriority="high"
          width="3276"
          height="950" />
-      </video>
     <span class="credit">DALTON TOYOTA NATIONAL CITY · USED &amp; CPO</span>
     <figcaption class="visually-hidden">Used and Toyota Certified Pre-Owned vehicles at Dalton Toyota National City, sold and serviced on the Mile of Cars in National City, minutes from downtown San Diego.</figcaption>
   </figure>
@@ -1385,6 +1389,15 @@
       <section class="s" id="why-used">
         <div class="section-num"><span>01</span><span>From the used-car desk</span></div>
         <h2 class="section-h">Why a used or CPO Toyota <em>holds up</em> in San Diego.</h2>
+        <figure class="dealer-clip">
+          <div class="frame">
+            <video controls playsinline preload="metadata" poster="clip-poster.jpg" aria-label="Pre-owned vehicles at Dalton Toyota National City">
+              <source src="dealer-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>Pre-owned inventory on the lot at Dalton Toyota National City.</figcaption>
+        </figure>
+
         <p class="lede">A used auto is the smart middle path between a brand-new sticker price and the gamble of a private-party listing. You skip the steepest part of the depreciation curve while still getting a vehicle with plenty of road left in it.</p>
         <p>On a Toyota, "plenty of road left" is not marketing. It is the reason resale values run high. <em>Reviewed and posted by Hector Baldivia, Used Car Manager, Dalton Toyota National City.</em></p>
 
