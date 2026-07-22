@@ -1302,6 +1302,16 @@
     }
     .btn:hover .arrow { transform: none; }
   }
+
+/* Hero CTA buttons (July template) */
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0 0 32px}
+.hero-cta a{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;border-radius:999px;padding:14px 26px;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.hero-cta a.primary{background:var(--red);color:#fff;border:1px solid var(--red)}
+.hero-cta a.primary:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.hero-cta a.secondary{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.hero-cta a.secondary:hover{background:var(--ink);color:#fff}
+.hero-cta .arrow{transition:transform .2s ease}
+.hero-cta a:hover .arrow{transform:translateX(3px)}
 </style>
 </head>
 <body>
@@ -1313,7 +1323,12 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Used &amp; Certified Pre-Owned · Dalton Toyota National City</div>
     <h1>A used auto in <em>San Diego,</em> done straight.</h1>
-    <p class="deck">Shopping for a used auto in San Diego? Dalton Toyota National City stocks used and Toyota Certified Pre-Owned vehicles just off I-5 on the Mile of Cars in National City, minutes from downtown. We price every car against the live San Diego market, hand you the full history report up front, and line up financing before you make the drive.</p>
+    <p class="deck">Dalton Toyota National City stocks used and Toyota Certified Pre-Owned vehicles on the Mile of Cars, minutes off I-5. Live-market pricing and full history reports, up front.</p>
+
+    <div class="hero-cta">
+      <a class="primary" href="https://www.toyotadalton.com/searchused.aspx" target="_blank" rel="noopener">See live used prices &amp; stock <span class="arrow">&rarr;</span></a>
+      <a class="secondary" href="https://www.toyotadalton.com/contactus.aspx">Ask us to hold one today</a>
+    </div>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">2400 National City Blvd<small>National City, CA 91950</small></div></div>
