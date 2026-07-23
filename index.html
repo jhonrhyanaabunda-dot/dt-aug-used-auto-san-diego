@@ -1322,6 +1322,17 @@
 
   /* July parity: deck spans the wrap at July's computed metrics (17px/1.7, no cap) */
   .hero .deck { font-size: 17px; line-height: 1.7; max-width: none; margin: 0 0 20px; }
+
+  /* Breadcrumb bar (April design system, matching the July articles) */
+  .breadcrumb-bar{font-size:12px}
+  .breadcrumb-bar nav{max-width:var(--maxw);margin:0 auto;padding:12px 32px 28px}
+  .breadcrumb-bar ol{list-style:none;display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0;padding:0}
+  .breadcrumb-bar li{display:inline-flex;align-items:center;gap:10px;letter-spacing:.04em}
+  .breadcrumb-bar li:not(:last-child)::after{content:"\203A";color:var(--muted);font-size:14px;line-height:1}
+  .breadcrumb-bar a{color:var(--ink-soft);text-decoration:none;text-underline-offset:3px}
+  .breadcrumb-bar a:hover{color:var(--red);text-decoration:underline}
+  .breadcrumb-bar [aria-current="page"]{color:var(--ink);font-weight:500}
+  @media (max-width:640px){.breadcrumb-bar nav{padding:8px 20px 18px}.breadcrumb-bar{font-size:11px}}
 </style>
 </head>
 <body>
@@ -1361,6 +1372,17 @@
     <figcaption class="visually-hidden">Used and Toyota Certified Pre-Owned vehicles at Dalton Toyota National City, sold and serviced on the Mile of Cars in National City, minutes from downtown San Diego.</figcaption>
   </figure>
 </header>
+<!-- Breadcrumb bar (matching the July articles) -->
+<div class="breadcrumb-bar">
+ <nav aria-label="Breadcrumb">
+  <ol>
+   <li><a href="https://www.toyotadalton.com/">Home</a></li>
+   <li><a href="https://www.toyotadalton.com/searchused.aspx">Used Inventory</a></li>
+   <li><span aria-current="page">Used Autos in San Diego</span></li>
+  </ol>
+ </nav>
+</div>
+
 
 <!-- ARTICLE BODY -->
 <main class="wrap" id="main-content">
@@ -1420,6 +1442,13 @@
         <div class="section-num"><span>02</span><span>What you get</span></div>
         <h2 class="section-h">What you get buying used <em>at Dalton Toyota</em>.</h2>
         <p class="lede">Buying used should not mean buying blind. Here is what comes with the car when you buy it from us instead of a flip lot or a private listing.</p>
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="lot-sedan-front.webp" width="1600" height="1200" alt="A used Toyota sedan parked under the canopy on the Dalton Toyota National City lot, front view." loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">Pre-owned inventory on our National City lot. Every unit is reconditioned before it is listed.</figcaption>
+        </figure>
+
 
         <ul class="bullets">
           <li><strong>A real dealership behind the sale</strong>, an established Toyota franchise operating here since 1996, not a flip lot or a private listing that vanishes after the check clears.</li>
@@ -1477,6 +1506,13 @@
         <div class="section-num"><span>05</span><span>The process</span></div>
         <h2 class="section-h">How to shop used <em>at Dalton Toyota</em>.</h2>
         <p class="lede">We kept the process simple so you can get to a real number fast.</p>
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="lot-sedan-rear.webp" width="1600" height="1200" alt="Rear view of a used Toyota sedan on the Dalton Toyota lot, showing the Dalton dealer plate frame." loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">Come see the actual car before you commit. We will pull the history report and put the numbers in writing.</figcaption>
+        </figure>
+
 
         <h3>1. Browse the inventory</h3>
         <p>See what is on the ground in used and Certified Pre-Owned at <a href="https://toyotadalton.com" rel="noopener" target="_blank">toyotadalton.com</a>.</p>
@@ -1528,6 +1564,13 @@
         <div class="section-num"><span>06</span><span>On our lot</span></div>
         <h2 class="section-h">What used Toyota models <em>move through</em> our lot.</h2>
         <p class="lede">Inventory shifts week to week, so the smart move is to check <a href="https://toyotadalton.com" rel="noopener" target="_blank">toyotadalton.com</a> for live availability. That said, here is what we typically see and who each one fits.</p>
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="lot-sedan-side.webp" width="1600" height="1200" alt="A used Toyota sedan photographed from the side on the Dalton Toyota National City lot." loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">Sedans move fastest through our used inventory, alongside trucks and SUVs.</figcaption>
+        </figure>
+
 
         <div class="trims">
           <article class="trim flagship">
@@ -1821,6 +1864,13 @@
 <!-- Sources -->
 <section class="sources" id="sources">
   <div class="wrap">
+      <div class="author-credit" style="margin:12px 0 36px;padding-top:28px;border-top:1px solid var(--rule);max-width:680px">
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Reviewed by</div>
+        <div style="font-family:var(--display);font-size:26px;font-weight:800;letter-spacing:-.01em;line-height:1.1;color:var(--ink)"><a href="https://www.toyotadalton.com/staff.aspx" style="color:inherit;text-decoration:none">Monica Salem</a></div>
+        <div style="font-size:15px;font-weight:600;color:var(--red-deep,#0a2a52);margin:4px 0 16px">Marketing Director, Dalton Auto Group</div>
+        <p style="font-size:16px;line-height:1.65;color:var(--ink-soft);margin:0 0 16px;max-width:60ch">Monica leads marketing for the Dalton Auto Group in National City, CA, with roughly 27 years in automotive marketing. She reviews Dalton Toyota vehicle, pricing, and dealership content for accuracy against the store's own site, Toyota's published information, and independent sources (EPA, NHTSA, IIHS) before it is published.</p>
+      </div>
+
     <div class="article-grid" style="padding-top:0;">
       <div></div>
       <div class="body">
